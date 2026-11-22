@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Tushar Kumawat | Data Scientist, GenAI &amp; Analytics Portfolio</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet"/>
+<link href="css/open-iconic-bootstrap.min.css" rel="stylesheet"/>
+<link href="css/animate.css" rel="stylesheet"/>
+<link href="css/owl.carousel.min.css" rel="stylesheet"/>
+<link href="css/owl.theme.default.min.css" rel="stylesheet"/>
+<link href="css/magnific-popup.css" rel="stylesheet"/>
+<link href="css/aos.css" rel="stylesheet"/>
+<link href="css/ionicons.min.css" rel="stylesheet"/>
+<link href="css/flaticon.css" rel="stylesheet"/>
+<link href="css/icomoon.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* ==========================================================
+   ABOUT SECTION - 2ND REFERENCE IMAGE DESIGN
+   Scoped only to #about-section
+   ========================================================== */
+
+#about-section.about-reference,
+#about-section {
+    background: #000 !important;
+    color: #999;
+    padding-top: 45px !important;
+    padding-bottom: 70px !important;
+    overflow: hidden;
+}
+
+#about-section .about-reference-layout {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 47% 53%;
+    column-gap: 55px;
+    align-items: start;
+}
+
+/* ---------- LEFT COLUMN ---------- */
+
+#about-section .about-reference-left {
+    width: 100%;
+}
+
+#about-section .about-profile-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
+    margin-bottom: 18px;
+}
+
+#about-section .about-profile-image {
+    width: 165px;
+    min-width: 165px;
+}
+
+#about-section .about-profile-image img {
+    width: 165px !important;
+    height: 165px !important;
+    object-fit: cover;
+    border-radius: 20px !important;
+    border: 4px solid #fff;
+    display: block;
+    margin: 0 !important;
+    box-shadow: none;
+}
+
+#about-section .about-profile-details {
+    padding-top: 0;
+    flex: 1;
+}
+
+#about-section .about-profile-details p {
+    margin: 0 0 20px !important;
+    padding: 0 !important;
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+    color: #aaa !important;
+}
+
+#about-section .about-profile-details p span {
+    color: #8fb7df !important;
+    font-weight: 400;
+    margin-right: 3px;
+}
+
+/* ---------- SKILLS ---------- */
+
+#about-section .about-skills {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#about-section .about-skills h3 {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #aaa !important;
+    margin: 0 0 26px !important;
+}
+
+#about-section .about-skill {
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+#about-section .about-skill-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #aaa;
+}
+
+#about-section .about-progress {
+    width: 100%;
+    height: 11px;
+    background: #1b1b1b;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+#about-section .about-progress div {
+    height: 11px;
+    background: #ffbd39;
+    border-radius: 0;
+}
+
+/* ---------- RIGHT COLUMN ---------- */
+
+#about-section .about-reference-right {
+    width: 100%;
+    position: relative;
+    padding-top: 0;
+}
+
+#about-section .about-reference-heading {
+    position: relative;
+    height: 82px;
+    margin-bottom: 7px;
+}
+
+#about-section .about-reference-heading h1 {
+    position: relative;
+    z-index: 2;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #fff !important;
+    font-size: 48px !important;
+    line-height: 1.15 !important;
+    font-weight: 700 !important;
+    letter-spacing: -1px;
+}
+
+#about-section .about-reference-big {
+    position: absolute;
+    z-index: 1;
+    top: 24px;
+    left: -15px;
+    color: #171717;
+    font-size: 74px;
+    line-height: .9;
+    font-weight: 800;
+    letter-spacing: -4px;
+    pointer-events: none;
+    user-select: none;
+}
+
+#about-section .about-reference-description {
+    margin: 0 0 38px !important;
+    color: #999 !important;
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    font-weight: 400;
+}
+
+#about-section .about-reference-info {
+    width: 100%;
+    margin: 0;
+}
+
+#about-section .about-reference-info > div {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    column-gap: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+#about-section .about-reference-info strong {
+    color: #fff !important;
+    font-weight: 700 !important;
+}
+
+#about-section .about-reference-info span {
+    color: #999 !important;
+}
+
+#about-section .about-reference-projects {
+    margin-top: 31px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+#about-section .about-reference-projects strong {
+    color: #ffbd39;
+    font-size: 28px;
+    line-height: 1;
+}
+
+#about-section .about-reference-projects span {
+    color: #aaa;
+    font-size: 15px;
+    margin-right: 12px;
+}
+
+#about-section .about-reference-projects .btn {
+    padding: 9px 18px !important;
+    font-size: 13px !important;
+    margin: 0 !important;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 991px) {
+    #about-section .about-reference-layout {
+        grid-template-columns: 1fr;
+        row-gap: 55px;
+        column-gap: 0;
+        max-width: 760px;
+    }
+
+    #about-section .about-reference-right {
+        padding-top: 0;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 575px) {
+    #about-section {
+        padding-top: 30px !important;
+    }
+
+    #about-section .about-profile-row {
+        gap: 20px;
+    }
+
+    #about-section .about-profile-image,
+    #about-section .about-profile-image img {
+        width: 115px !important;
+        min-width: 115px;
+        height: 115px !important;
+    }
+
+    #about-section .about-profile-details p {
+        font-size: 13px !important;
+        margin-bottom: 12px !important;
+    }
+
+    #about-section .about-reference-heading {
+        height: 68px;
+    }
+
+    #about-section .about-reference-heading h1 {
+        font-size: 38px !important;
+    }
+
+    #about-section .about-reference-big {
+        font-size: 58px;
+        top: 19px;
+        left: -5px;
+    }
+
+    #about-section .about-reference-description {
+        font-size: 14px !important;
+        line-height: 1.65 !important;
+    }
+
+    #about-section .about-reference-info > div {
+        grid-template-columns: 105px 1fr;
+        font-size: 14px;
+    }
+
+    #about-section .about-reference-projects {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Social media icons - equal size and centered */
+.ftco-footer-social {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px;
+}
+
+.ftco-footer-social li {
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ftco-footer-social li a {
+  width: 40px !important;
+  height: 40px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+}
+
+.ftco-footer-social li a span,
+.ftco-footer-social li a i {
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px !important;
+  line-height: 1 !important;
+}
+
+.ftco-footer-social li a:hover i,
+.ftco-footer-social li a:hover span {
+  color: #ffbd39;
+}
+
+/* Main profile image - rounded four corners */
+#about-section .about-profile-image img {
+  border-radius: 20px !important;
+}
+
+</style>
+<!--
+  RESUME DEPLOYMENT:
+  Keep the PDF at Resume/Resume.pdf relative to this index.html.
+  The Download CV buttons intentionally use a relative path + download attribute,
+  so they work after deploying the portfolio to GitHub Pages, Netlify, Vercel, or a normal web host.
+-->
+<style>
+/* Portfolio refresh: domain cards, project filters and recruiter-friendly polish */
+.domain-focus-section{padding:75px 0 55px;background:#101827;color:#f7f8fc;overflow:hidden}
+.domain-heading{margin-bottom:34px}.domain-heading .eyebrow{letter-spacing:2px;font-size:11px;font-weight:700;color:#a7b8d7}.domain-heading h2{color:#fff;font-size:34px;font-weight:800;margin:10px 0}.domain-heading p{color:#b8c4d8;max-width:680px;margin:0 auto}
+.domain-cards{row-gap:22px}.domain-card{display:block;position:relative;height:100%;min-height:360px;border:1px solid rgba(255,255,255,.12);border-radius:18px;overflow:hidden;background:#17243a;color:#fff;transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}.domain-card:hover{transform:translateY(-9px);box-shadow:0 22px 45px rgba(0,0,0,.3);border-color:rgba(255,255,255,.45);color:#fff;text-decoration:none}.domain-card-art{height:180px;overflow:hidden;background:linear-gradient(135deg,#182c4c,#273e62)}.domain-card-art img{width:100%;height:100%;object-fit:cover;opacity:.82;transition:transform .55s ease,opacity .35s ease}.domain-card:hover .domain-card-art img{transform:scale(1.09);opacity:1}.domain-card-copy{padding:22px}.domain-card-copy span{font-size:10px;letter-spacing:1.4px;color:#a9bad6;font-weight:700}.domain-card-copy h3{color:#fff;font-size:20px;font-weight:750;margin:10px 0}.domain-card-copy p{color:#c2ccdc;font-size:13px;min-height:62px}.domain-card-copy b{font-size:12px;color:#9ec5ff}
+.project-filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.project-filter{border:1px solid #d9dfeb;background:#fff;color:#25334a;border-radius:24px;padding:9px 17px;font-size:12px;font-weight:700;transition:all .2s}.project-filter:hover,.project-filter.active{background:#243b62;border-color:#243b62;color:#fff}.project-card{height:100%;width:100%;padding-bottom:18px;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 8px 26px rgba(20,35,60,.07);transition:transform .25s ease,box-shadow .25s ease}.project-card:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(20,35,60,.14)}.project-image{display:block;border-radius:0!important;height:205px!important;background-size:cover;background-position:center;transition:background-size .3s}.project-card .text{padding:0 18px 12px}.project-category{display:inline-block;color:#3865a2;background:#edf3fb;border-radius:20px;padding:5px 10px;font-size:10px;letter-spacing:.4px;font-weight:700;margin-bottom:9px}.project-card h3{font-size:17px;line-height:1.4;min-height:48px}.project-card h3 a{color:#17243a}.project-card p{font-size:13px;line-height:1.65;color:#667085;min-height:105px}.project-link{font-size:12px;font-weight:700;color:#3865a2}.project-item.is-hidden{display:none!important}.experience-grid .resume-wrap{height:100%}.skill-groups p{margin-bottom:13px;line-height:1.75}.skill-groups strong{color:#263d62}.about-reference-projects{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.about-reference-projects strong{font-size:32px}.about-reference-projects .btn{margin-left:8px}.about-reference-heading h1{font-weight:800}.hero .btn{margin-top:12px}
+@media(max-width:767px){.domain-focus-section{padding:55px 0 35px}.domain-card{min-height:320px}.domain-card-art{height:160px}.project-card p{min-height:0}.project-card h3{min-height:0}.project-filters{padding:0 12px}.project-filter{padding:8px 13px}}
+</style><meta content="Portfolio of Tushar Kumawat — Data Scientist and AI/ML Engineer building financial RAG, agentic AI, analytics, forecasting, and machine learning solutions." name="description"/></head>
+<body data-offset="300" data-spy="scroll" data-target=".site-navbar-target">
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+<div class="container">
+<a class="navbar-brand" href="index.html">Tushar Kumawat</a>
+<button aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" data-target="#ftco-nav" data-toggle="collapse" type="button">
+<span class="oi oi-menu"></span> Menu
+	      </button>
+<div class="collapse navbar-collapse" id="ftco-nav">
+<ul class="navbar-nav nav ml-auto">
+<li class="nav-item"><a class="nav-link" href="#home-section"><span>Home</span></a></li>
+<li class="nav-item"><a class="nav-link" href="#about-section"><span>About</span></a></li>
+<li class="nav-item"><a class="nav-link" href="#resume-section"><span>Resume</span></a></li>
+<li class="nav-item"><a class="nav-link" href="#project-section"><span>Projects</span></a></li>
+<li class="nav-item"><a class="nav-link" href="#contact-section"><span>Contact</span></a></li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="hero" id="home-section">
+<div class="home-slider owl-carousel">
+<div class="slider-item">
+<div class="overlay"></div>
+<div class="container">
+<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+<div class="overlay"></div>
+</div>
+<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+<div class="text">
+<span class="subheading">Hello!</span>
+<h1 class="mb-4 mt-3">I'm <span>Tushar Kumawat</span></h1>
+<!-- Element to contain animated typing -->
+<span id="typing-animation"></span>
+<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+    'Data Scientist',
+    'ML Engineer',
+    'AI Developer',
+    'AI/ML Engineer',
+    'Python Developer',
+    'Engineer'
+];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+<br/>
+<br/>
+<h2>A  Data Scientist</h2>
+<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+<!-- <br> -->
+<a class="btn btn-white btn-outline-white py-3 px-4" href="#project-section">My Work</a><a class="btn btn-white btn-outline-white py-3 px-4 ml-2" href="https://github.com/TusharK93" rel="noopener noreferrer" target="_blank">GitHub</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+<div class="container">
+<div class="about-reference-layout">
+<!-- LEFT SIDE: PHOTO, PERSONAL DETAILS AND SKILLS -->
+<div class="about-reference-left">
+<div class="about-profile-row">
+<div class="about-profile-image">
+<img alt="Tushar Kumawat" class="img-fluid" src="images/about-me.png"/>
+</div>
+<div class="about-profile-details">
+<p><span>Name:</span> Tushar Kumawat</p>
+<p><span>Job Role:</span> Data Scientist | ML Engineer | AI/ML Engineer</p>
+<p><span>Experience:</span>Data Analytics, Data Science &amp; AI Projects</p>
+<p><span>Address:</span> Jaipur, India</p>
+</div>
+</div>
+<div class="about-skills">
+<h3>Skills</h3>
+<div class="about-skill">
+<div class="about-skill-name">
+<span>SQL</span><span>95%</span>
+</div>
+<div class="about-progress">
+<div style="width:95%"></div>
+</div>
+</div>
+<div class="about-skill">
+<div class="about-skill-name">
+<span>PYTHON</span><span>85%</span>
+</div>
+<div class="about-progress">
+<div style="width:85%"></div>
+</div>
+</div>
+<div class="about-skill">
+<div class="about-skill-name">
+<span>Data Visualization</span><span>90%</span>
+</div>
+<div class="about-progress">
+<div style="width:90%"></div>
+</div>
+</div>
+<div class="about-skill">
+<div class="about-skill-name">
+<span>Statistical Analysis</span><span>85%</span>
+</div>
+<div class="about-progress">
+<div style="width:85%"></div>
+</div>
+</div>
+<div class="about-skill">
+<div class="about-skill-name">
+<span>Machine Learning</span><span>80%</span>
+</div>
+<div class="about-progress">
+<div style="width:80%"></div>
+</div>
+</div>
+<div class="about-skill">
+<div class="about-skill-name">
+<span>Deep Learning</span><span>80%</span>
+</div>
+<div class="about-progress">
+<div style="width:80%"></div>
+</div>
+</div>
+<div class="about-skill">
+<div class="about-skill-name">
+<span>Generative AI</span><span>80%</span>
+</div>
+<div class="about-progress">
+<div style="width:80%"></div>
+</div>
+</div>
+<div class="about-skill">
+<div class="about-skill-name">
+<span>A/B Testing</span><span>80%</span>
+</div>
+<div class="about-progress">
+<div style="width:80%"></div>
+</div>
+</div>
+<div class="about-skill">
+<div class="about-skill-name">
+<span>Big Data</span><span>60%</span>
+</div>
+<div class="about-progress">
+<div style="width:60%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT SIDE: ABOUT ME -->
+<div class="about-reference-right">
+<div class="about-reference-heading">
+<h1>About Me</h1>
+</div>
+<p class="about-reference-description">I’m a Data Scientist and AI/ML Engineer who builds practical, measurable solutions across analytics, machine learning, and Generative AI. My work spans financial-document intelligence, agentic applications, fraud analytics, forecasting, and business intelligence. I enjoy turning complex data into clear decisions through reliable models, grounded LLM applications, and interactive dashboards.</p>
+<div class="about-reference-info">
+<div><strong>Profile:</strong><span>Data Science &amp; Analytics</span></div>
+<div><strong>Domain:</strong> Finance, Sales Forecasting, Trading &amp; Portfolio Analytics</div>
+<div><strong>Education:</strong><span>MCA</span></div>
+<div><strong>Language:</strong><span>English, Hindi</span></div>
+<div><strong>BI Tools:</strong><span>Microsoft Power BI &amp; Tableau</span></div>
+<div><strong>Other Skills:</strong><span>Cloud, PySpark, Git, AWS, Docker &amp; Hadoop</span></div>
+<div><strong>Interest:</strong><span>Traveling, Travel Photography, Teaching</span></div>
+</div>
+<div class="about-reference-projects">
+<strong>15+</strong>
+<span>Projects Completed</span>
+<a class="btn btn-outline-primary" href="https://github.com/TusharK93" rel="noopener noreferrer" target="_blank">GitHub Profile</a></div>
+</div>
+</div>
+</div>
+</section>
+<section class="ftco-section ftco-no-pb" id="resume-section">
+<div class="container">
+<div class="row justify-content-center pb-5">
+<div class="col-md-10 heading-section text-center ftco-animate">
+<h1 class="big big-2">Resume</h1>
+<h2 class="mb-4">Resume</h2>
+<p>Data Scientist and AI/ML Engineer with an MCA background and experience in data visualization, business analytics, and end-to-end AI projects. Skilled in Python, SQL, statistical analysis, machine learning, Generative AI, RAG systems, agentic workflows, and BI. Focused on building explainable, cost-aware solutions that connect technical results with business outcomes.</p>
+</div>
+</div>
+<div class="row">
+<h1 class="big-4">Experience</h1>
+<div class="underline"></div>
+</div>
+<br/><div class="row experience-grid"><div class="col-md-6"><div class="resume-wrap ftco-animate"><span class="date">2025 – 2026</span><h2>Data Visualization Intern</h2><span class="position">NullClass Pvt. Ltd.</span><p class="mt-4">Completed an internship focused on Business Intelligence and data visualization, translating raw datasets into clear dashboards and business insights.</p><ul><li>Designed interactive Tableau dashboards and reports to monitor trends and key performance indicators.</li><li>Cleaned, transformed, and visualized data to support business analysis and data-driven decisions.</li><li>Presented insights through clear visual storytelling and improved dashboard usability using Tableau best practices.</li></ul></div></div><div class="col-md-6"><div class="resume-wrap ftco-animate"><span class="date">Apr 2026 – Oct 2026</span><h2>Data Analyst (Part-time)</h2><span class="position">The WoodenPath | Wholesale Shop · On-site, Jaipur</span><p class="mt-4">Supported business decisions through sales, pricing, revenue, and financial-document analysis.</p><ul><li>Analyzed sales, pricing, and revenue data using Python and statistical methods; applied A/B testing and confidence intervals, contributing to a 5% increase in sales.</li><li>Partnered with stakeholders to translate analysis into practical pricing and sales recommendations.</li><li>Built an end-to-end Financial RAG Assistant using hybrid search (BM25 + vector), cross-encoder reranking, page-level citations, LLM guardrails, and LangSmith tracing/evaluation.</li><li>Delivered grounded financial-report insights for 5+ small retailers using the company’s products and services.</li></ul></div></div><div class="col-md-6"><div class="resume-wrap ftco-animate"><span class="date">2026 – Present</span><h2>Data Scientist</h2><span class="position">Independent Projects &amp; Applied AI</span><p class="mt-4">Building end-to-end Data Science and AI solutions, with a focus on reliable machine learning, financial analytics, and agentic systems.</p><ul><li>Developed projects across machine learning, deep learning, NLP, computer vision, time-series forecasting, fraud analytics, and Generative AI.</li><li>Built a multi-agent travel-planning and flight-booking workflow with LangGraph, tool integrations, PostgreSQL memory, human-in-the-loop controls, and LangSmith evaluation.</li><li>Applied statistical analysis, model evaluation, retrieval quality checks, and LLM observability to improve solution reliability.</li></ul></div></div></div>
+<br/>
+<br/>
+<div class="row">
+<h1 class="big-4">Education</h1>
+<div class="underline"></div>
+</div>
+<br/>
+<div class="row"><h2 class="mb-4">Technical Skills</h2>
+<div class="skill-groups">
+<p><strong>Programming &amp; Data:</strong> Python, SQL, Pandas, NumPy, Statistics, A/B Testing, Confidence Intervals, Statsmodels</p>
+<p><strong>Machine Learning &amp; Deep Learning:</strong> Scikit-learn, XGBoost, Random Forest, TensorFlow, PyTorch, NLP, Computer Vision, Anomaly Detection, Time-Series Forecasting</p>
+<p><strong>Generative AI &amp; Agentic AI:</strong> LLMs, Prompt Engineering, RAG, Hybrid Search (BM25 + Vector), Embeddings, Vector Databases, Cross-Encoder Reranking, LangChain, LangGraph, LlamaIndex, MCP, Tool Calling, Multi-Agent Systems, Guardrails, Human-in-the-Loop</p>
+<p><strong>LLM Evaluation &amp; Deployment:</strong> LangSmith Tracing &amp; Evaluation, RAG Evaluation, FastAPI, Flask, Streamlit, Django, API Integration, Structured Logging</p>
+<p><strong>BI &amp; Visualization:</strong> Power BI, Tableau, Matplotlib, Seaborn, Interactive Dashboards, Data Storytelling</p>
+<p><strong>Big Data, Cloud &amp; Tools:</strong> PySpark, Hadoop, Apache Kafka, Git, GitHub, AWS, Docker, MLflow, PostgreSQL</p>
+</div></div>
+<br/>
+<div class="row justify-content-center mt-5">
+<div class="col-md-6 text-center ftco-animate">
+<p><a class="btn btn-primary py-4 px-5" download="Tushar-Kumawat-Resume.pdf" href="Resume/Resume.pdf">Download CV</a></p>
+</div>
+</div>
+</div>
+</section>
+<section class="domain-focus-section" id="domain-focus"><div class="container">
+<div class="text-center domain-heading"><span class="eyebrow">WHERE I APPLY DATA &amp; AI</span><h2>Domain Focus</h2><p>From business performance to financial intelligence — building tools that turn data into decisions.</p></div>
+<div class="row domain-cards">
+<div class="col-md-4"><a class="domain-card domain-finance" href="#project-section"><div class="domain-card-art"><img alt="Financial analytics dashboards" loading="lazy" src="images/DA.png"/></div><div class="domain-card-copy"><span>01 / FINANCIAL INTELLIGENCE</span><h3>Finance &amp; Financial RAG</h3><p>Document intelligence, grounded answers, citations, and financial insight discovery.</p><b>Explore projects ↗</b></div></a></div>
+<div class="col-md-4"><a class="domain-card domain-sales" href="#project-section"><div class="domain-card-art"><img alt="Sales forecasting analytics" loading="lazy" src="images/proj_4.jpg"/></div><div class="domain-card-copy"><span>02 / BUSINESS PERFORMANCE</span><h3>Sales Forecasting &amp; Analytics</h3><p>Sales trends, pricing experiments, forecasting, KPI dashboards, and business decisions.</p><b>Explore projects ↗</b></div></a></div>
+<div class="col-md-4"><a class="domain-card domain-trading" href="#project-section"><div class="domain-card-art"><img alt="Trading and portfolio analytics" loading="lazy" src="images/proj_3.jpg"/></div><div class="domain-card-copy"><span>03 / MARKET ANALYTICS</span><h3>Trading &amp; Portfolio Analytics</h3><p>Quantitative analysis, risk-aware insights, performance tracking, and decision support.</p><b>Explore projects ↗</b></div></a></div>
+</div></div></section><section class="ftco-section" id="project-section">
+<div class="container">
+<div class="row justify-content-center mb-5 pb-5">
+<div class="col-md-7 heading-section text-center ftco-animate">
+<h1 class="big big-2">Projects</h1>
+<h2 class="mb-4">Projects</h2>
+<p>A selection of 15+ projects and applied case studies across analytics, finance, machine learning, Generative AI, and agentic systems. Explore the work and implementation details on GitHub.</p>
+</div>
+</div>
+<div aria-label="Filter projects" class="project-filters text-center mb-4" role="group">
+<button class="project-filter active" data-filter="all" type="button">All Projects</button>
+<button class="project-filter" data-filter="analytics" type="button">Analytics &amp; BI</button>
+<button class="project-filter" data-filter="ml" type="button">Machine Learning &amp; Deep Learning</button>
+<button class="project-filter" data-filter="genai" type="button">GenAI &amp; Agentic AI</button>
+</div><div class="row project-grid" id="project-grid"><div class="col-md-4 d-flex ftco-animate project-item" data-category="analytics"><div class="blog-entry project-card justify-content-end"><a aria-label="Open Digital Music Store Data Analysis using SQL on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TK123456444/-Music-Store-Data-Analysis-project-using-SQL.git" rel="noopener noreferrer" style="background-image: url('images/proj_1.jpg');" target="_blank"></a><div class="text mt-3"><span class="project-category">Analytics &amp; BI</span><h3 class="heading"><a href="https://github.com/TK123456444/-Music-Store-Data-Analysis-project-using-SQL.git" rel="noopener noreferrer" target="_blank">Digital Music Store Data Analysis using SQL</a></h3><p>Analyzed music-store data with advanced SQL queries to uncover customer behavior, revenue patterns, and growth opportunities.</p><a class="project-link" href="https://github.com/TK123456444/-Music-Store-Data-Analysis-project-using-SQL.git" rel="noopener noreferrer" target="_blank">Explore on GitHub →</a></div></div></div><div class="col-md-4 d-flex ftco-animate project-item" data-category="ml"><div class="blog-entry project-card justify-content-end"><a aria-label="Open Air Pressure System Failure Prediction on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TK123456444/-Air-Pressure-System-APS-Project-Using-Machine-Learning.git" rel="noopener noreferrer" style="background-image: url('images/proj_2.jpg.png');" target="_blank"></a><div class="text mt-3"><span class="project-category">Machine Learning</span><h3 class="heading"><a href="https://github.com/TK123456444/-Air-Pressure-System-APS-Project-Using-Machine-Learning.git" rel="noopener noreferrer" target="_blank">Air Pressure System Failure Prediction</a></h3><p>Developed a machine-learning model to identify potential APS failures from sensor data and support predictive maintenance.</p><a class="project-link" href="https://github.com/TK123456444/-Air-Pressure-System-APS-Project-Using-Machine-Learning.git" rel="noopener noreferrer" target="_blank">Explore on GitHub →</a></div></div></div><div class="col-md-4 d-flex ftco-animate project-item" data-category="ml"><div class="blog-entry project-card justify-content-end"><a aria-label="Open Kidney Disease Classification on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TK123456444/Kidney-Disease-Classification-Project---Deep-Learning.git" rel="noopener noreferrer" style="background-image: url('images/DL.png');" target="_blank"></a><div class="text mt-3"><span class="project-category">Deep Learning</span><h3 class="heading"><a href="https://github.com/TK123456444/Kidney-Disease-Classification-Project---Deep-Learning.git" rel="noopener noreferrer" target="_blank">Kidney Disease Classification</a></h3><p>Built a CNN image-classification model with TensorFlow; reported 94% accuracy and 92% F1-score in project evaluation.</p><a class="project-link" href="https://github.com/TK123456444/Kidney-Disease-Classification-Project---Deep-Learning.git" rel="noopener noreferrer" target="_blank">Explore on GitHub →</a></div></div></div><div class="col-md-4 d-flex ftco-animate project-item" data-category="genai"><div class="blog-entry project-card justify-content-end"><a aria-label="Open AI-Powered Recruitment Agent on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TK123456444/AI-Powered-Recruitment-Agent---Generative-AI-Project.git" rel="noopener noreferrer" style="background-image: url('images/AI.png');" target="_blank"></a><div class="text mt-3"><span class="project-category">GenAI &amp; Agentic AI</span><h3 class="heading"><a href="https://github.com/TK123456444/AI-Powered-Recruitment-Agent---Generative-AI-Project.git" rel="noopener noreferrer" target="_blank">AI-Powered Recruitment Agent</a></h3><p>Created a LangChain and LLM-powered assistant for resume screening, candidate evaluation, and recruitment workflow support.</p><a class="project-link" href="https://github.com/TK123456444/AI-Powered-Recruitment-Agent---Generative-AI-Project.git" rel="noopener noreferrer" target="_blank">Explore on GitHub →</a></div></div></div><div class="col-md-4 d-flex ftco-animate project-item" data-category="ml"><div class="blog-entry project-card justify-content-end"><a aria-label="Open Hate Speech Classification using NLP on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TK123456444/Hate-Speech-Classification-Project---NLP-Natural-Language-Processing-.git" rel="noopener noreferrer" style="background-image: url('images/NLP.png');" target="_blank"></a><div class="text mt-3"><span class="project-category">Natural Language Processing</span><h3 class="heading"><a href="https://github.com/TK123456444/Hate-Speech-Classification-Project---NLP-Natural-Language-Processing-.git" rel="noopener noreferrer" target="_blank">Hate Speech Classification using NLP</a></h3><p>Built an LSTM-based text classifier; reported 95% accuracy and 93% F1-score, with a FastAPI inference endpoint.</p><a class="project-link" href="https://github.com/TK123456444/Hate-Speech-Classification-Project---NLP-Natural-Language-Processing-.git" rel="noopener noreferrer" target="_blank">Explore on GitHub →</a></div></div></div><div class="col-md-4 d-flex ftco-animate project-item" data-category="analytics"><div class="blog-entry project-card justify-content-end"><a aria-label="Open Power BI Sales Dashboard on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TK123456444/Power-Bi-Project.git" rel="noopener noreferrer" style="background-image: url('images/proj_3.jpg');" target="_blank"></a><div class="text mt-3"><span class="project-category">Analytics &amp; BI</span><h3 class="heading"><a href="https://github.com/TK123456444/Power-Bi-Project.git" rel="noopener noreferrer" target="_blank">Power BI Sales Dashboard</a></h3><p>Designed an interactive dashboard to explore online sales performance, customer insights, and regional trends.</p><a class="project-link" href="https://github.com/TK123456444/Power-Bi-Project.git" rel="noopener noreferrer" target="_blank">Explore on GitHub →</a></div></div></div><div class="col-md-4 d-flex ftco-animate project-item" data-category="analytics"><div class="blog-entry project-card justify-content-end"><a aria-label="Open Data Analysis with Pandas &amp; Streamlit on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TK123456444/Data-Analysis-Project-using-streamlit.git" rel="noopener noreferrer" style="background-image: url('images/DA.png');" target="_blank"></a><div class="text mt-3"><span class="project-category">Analytics &amp; BI</span><h3 class="heading"><a href="https://github.com/TK123456444/Data-Analysis-Project-using-streamlit.git" rel="noopener noreferrer" target="_blank">Data Analysis with Pandas &amp; Streamlit</a></h3><p>Built an interactive Python application for data cleaning, exploratory analysis, visualization, and insight discovery.</p><a class="project-link" href="https://github.com/TK123456444/Data-Analysis-Project-using-streamlit.git" rel="noopener noreferrer" target="_blank">Explore on GitHub →</a></div></div></div><div class="col-md-4 d-flex ftco-animate project-item" data-category="analytics"><div class="blog-entry project-card justify-content-end"><a aria-label="Open Sales Forecasting with Prophet on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TK123456444/Sales-Forecasting-System-using-Flask-and-Prophet---Time-Series-Project.git" rel="noopener noreferrer" style="background-image: url('images/proj_4.jpg');" target="_blank"></a><div class="text mt-3"><span class="project-category">Analytics &amp; BI</span><h3 class="heading"><a href="https://github.com/TK123456444/Sales-Forecasting-System-using-Flask-and-Prophet---Time-Series-Project.git" rel="noopener noreferrer" target="_blank">Sales Forecasting with Prophet</a></h3><p>Developed a Flask-based time-series application using Prophet to forecast sales trends and support business planning.</p><a class="project-link" href="https://github.com/TK123456444/Sales-Forecasting-System-using-Flask-and-Prophet---Time-Series-Project.git" rel="noopener noreferrer" target="_blank">Explore on GitHub →</a></div></div></div><div class="col-md-4 d-flex ftco-animate project-item" data-category="genai"><div class="blog-entry project-card justify-content-end"><a aria-label="Open Agentic AI Traveller and Flight Booker Agent on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TusharK93/Agentic-AI-Project---Flight-Booker" rel="noopener noreferrer" style="background-image: url('images/AI.png');" target="_blank"></a><div class="text mt-3"><span class="project-category">GenAI &amp; Agentic AI</span><h3 class="heading"><a href="https://github.com/TusharK93/Agentic-AI-Project---Flight-Booker" rel="noopener noreferrer" target="_blank">Agentic AI Traveller and Flight Booker Agent</a></h3><p>Built an agentic travel-planning workflow. Achieved 90% task success, 92% tool accuracy, 85% budget compliance, and 14s latency, reducing planning effort.</p><a class="project-link" href="https://github.com/TusharK93/Agentic-AI-Project---Flight-Booker" rel="noopener noreferrer" target="_blank">Explore on GitHub →</a></div></div></div><div class="col-md-4 d-flex ftco-animate project-item" data-category="genai"><div class="blog-entry project-card justify-content-end"><a aria-label="Open Financial RAG Assistant on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TusharK93" rel="noopener noreferrer" style="background-image: url('images/DA.png');" target="_blank"></a><div class="text mt-3"><span class="project-category">GenAI &amp; Agentic AI</span><h3 class="heading"><a href="https://github.com/TusharK93" rel="noopener noreferrer" target="_blank">Financial RAG Assistant</a></h3><p>Built an end-to-end financial-document assistant with BM25 + vector hybrid retrieval, cross-encoder reranking, page-level citations, LLM guardrails, and LangSmith tracing/evaluation; serving 5+ small retailers.</p><a class="project-link" href="https://github.com/TusharK93/Financial-Rag-Project.git" rel="noopener noreferrer" target="_blank">Explore on GitHub →</a></div></div></div><div class="col-md-4 d-flex ftco-animate project-item" data-category="ml"><div class="blog-entry project-card justify-content-end"><a aria-label="Open Fraud Detection &amp; Anomaly Dashboard on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TusharK93" rel="noopener noreferrer" style="background-image: url('images/proj_3.jpg');" target="_blank"></a><div class="text mt-3"><span class="project-category">Machine Learning</span><h3 class="heading"><a href="https://github.com/TusharK93" rel="noopener noreferrer" target="_blank">Fraud Detection &amp; Anomaly Dashboard</a></h3><p>Developed a Django dashboard using autoencoder-based anomaly detection to flag suspicious transaction patterns, with a synthetic demo mode.</p><a class="project-link" href="https://github.com/TusharK93" rel="noopener noreferrer" target="_blank">Explore on GitHub →</a></div></div></div><div class="col-md-4 d-flex ftco-animate project-item" data-category="analytics"><div class="blog-entry project-card justify-content-end"><a aria-label="Open Retail Sales &amp; Pricing Analytics on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TusharK93" rel="noopener noreferrer" style="background-image: url('images/proj_1.jpg');" target="_blank"></a><div class="text mt-3"><span class="project-category">Analytics &amp; BI</span><h3 class="heading"><a href="https://github.com/TusharK93" rel="noopener noreferrer" target="_blank">Retail Sales &amp; Pricing Analytics</a></h3><p>Applied Python-based sales and pricing analysis, A/B testing, and confidence intervals to support business decisions and contribute to a 5% sales increase.</p><a class="project-link" href="https://github.com/TusharK93" rel="noopener noreferrer" target="_blank">Explore on GitHub →</a></div></div></div><div class="col-md-4 d-flex ftco-animate project-item" data-category="analytics"><div class="blog-entry project-card justify-content-end"><a aria-label="Open Tableau Business Intelligence Reporting on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TusharK93" rel="noopener noreferrer" style="background-image: url('images/DA.png');" target="_blank"></a><div class="text mt-3"><span class="project-category">Analytics &amp; BI</span><h3 class="heading"><a href="https://github.com/TusharK93" rel="noopener noreferrer" target="_blank">Tableau Business Intelligence Reporting</a></h3><p>Produced interactive Tableau dashboards and KPI reports, transforming datasets into accessible business insights during a data-visualization internship.</p><a class="project-link" href="https://github.com/TusharK93" rel="noopener noreferrer" target="_blank"></a></div></div></div><div class="col-md-4 d-flex ftco-animate project-item" data-category="genai"><div class="blog-entry project-card justify-content-end"><a aria-label="Open Multi-Agent Trip Planning System on GitHub" class="block-20 zoom-effect project-image" href="https://github.com/TusharK93" rel="noopener noreferrer" style="background-image: url('images/AI.png');" target="_blank"></a><div class="text mt-3"><span class="project-category">GenAI &amp; Agentic AI</span><h3 class="heading"><a href="https://github.com/TusharK93" rel="noopener noreferrer" target="_blank">Multi-Agent Trip Planning System</a></h3><p>Designed a budget-aware multi-day travel planner with LangGraph agents, travel API tools, PostgreSQL memory, human-in-the-loop controls, guardrails, and LangSmith monitoring.</p><a class="project-link" href="https://github.com/TusharK93" rel="noopener noreferrer" target="_blank">Explore on GitHub →</a></div></div></div></div>
+</div>
+</section>
+<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+<div class="container">
+<div class="row d-md-flex align-items-center">
+<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+<div class="block-18">
+<div class="text">
+<strong class="number" data-number="5">0</strong>
+<span>Achievements</span>
+</div>
+</div>
+</div>
+<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+<div class="block-18">
+<div class="text">
+<strong class="number" data-number="15">0</strong>
+<span>Projects</span>
+</div>
+</div>
+</div>
+<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+<div class="block-18">
+<div class="text">
+<strong class="number" data-number="500">0</strong>
+<span>Cups of coffee</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+<!-- <div class="container"> -->
+<div class="row justify-content-center">
+<div class="col-md-7 ftco-animate text-center">
+<h2>More projects on<span> Github  </span> </h2>
+<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+<br/>
+<p><a class="btn btn-primary py-3 px-5" href="https://github.com/TusharK93" rel="noopener noreferrer" target="_blank">GitHub · View All Projects</a></p>
+</div>
+</div>
+</div>
+<!-- </div> -->
+</div>
+</section>
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+<div class="container">
+<div class="row justify-content-center mb-5 pb-3">
+<div class="col-md-7 heading-section text-center ftco-animate">
+<h2 class="mb-4">Contact</h2>
+<p>Below are the details to reach out to me!</p>
+</div>
+</div>
+<div class="row d-flex contact-info mb-5">
+<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+<div class="align-self-stretch box p-4 text-center">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="icon-map-signs"></span>
+</div>
+<h3 class="mb-4">Address</h3>
+<p>Jaipur, India</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+<div class="align-self-stretch box p-4 text-center">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="icon-phone2"></span>
+</div>
+<h3 class="mb-4">Contact Number</h3>
+<p><a href="tel:+919358402590">+91 9358402590</a></p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+<div class="align-self-stretch box p-4 text-center">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="icon-paper-plane"></span>
+</div>
+<h3 class="mb-4">Email Address</h3>
+<p><a href="mailto:tukumawat73@gmail.com">tukumawat73@gmail.com</a></p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+<div class="align-self-stretch box p-4 text-center">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="icon-globe"></span>
+</div>
+<h3 class="mb-4">Download Resume</h3>
+<p><a class="btn btn-primary py-2 px-3" download="Tushar-Kumawat-Resume.pdf" href="Resume/Resume.pdf">Download CV</a></p>
+</div>
+</div>
+<div class="container">
+<br/>
+<br/>
+<div class="row justify-content-center">
+<div class="col-md-7 ftco-animate text-center">
+<h2>Have a<span> Question?  </span> <a class="btn btn-primary py-3 px-5" href="https://www.linkedin.com/messaging/thread/2-MzZmNjlhMmMtN2ExOC00OTQ0LTgxMzAtMWVkOGQ0OTIxNGQ0XzEwMA==/">Click Here</a> </h2>
+</div>
+</div>
+<br/>
+<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+<li class="ftco-animate normal-txt">Find me on  </li>
+<li class="ftco-animate"><a href="https://www.linkedin.com/in/tushar-kumawat-7b44b527b/"><span class="icon-linkedin"></span></a></li>
+<li class="ftco-animate"><a aria-label="X / Twitter" href="https://x.com/TusharK89508468" rel="noopener noreferrer" target="_blank"><span class="icon-twitter"></span></a></li>
+<li class="ftco-animate"><a aria-label="Instagram" href="https://www.instagram.com/tusharkumawat1234/" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></li>
+<li class="ftco-animate"><a aria-label="Facebook" href="https://www.facebook.com/tushar.kumawat.315" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+<li class="ftco-animate"><a aria-label="GitHub" href="https://github.com/TusharK93" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a></li></ul>
+<br/>
+</div>
+</div>
+</div></section>
+<footer class="ftco-footer ftco-section">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i aria-hidden="true" class="icon-heart color-danger"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- loader -->
+<div class="show fullscreen" id="ftco-loader"><svg class="circular" height="48px" width="48px"><circle class="path-bg" cx="24" cy="24" fill="none" r="22" stroke="#eeeeee" stroke-width="4"></circle><circle class="path" cx="24" cy="24" fill="none" r="22" stroke="#F96D00" stroke-miterlimit="10" stroke-width="4"></circle></svg></div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/main.js"></script>
+<script>document.addEventListener('DOMContentLoaded',function(){var filters=document.querySelectorAll('.project-filter');var items=document.querySelectorAll('.project-item');filters.forEach(function(btn){btn.addEventListener('click',function(){var f=btn.getAttribute('data-filter');filters.forEach(function(b){b.classList.toggle('active',b===btn)});items.forEach(function(item){var show=f==='all'||item.getAttribute('data-category')===f;item.classList.toggle('is-hidden',!show)})})})});</script></body>
+</html>
